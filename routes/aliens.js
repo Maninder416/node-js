@@ -2,7 +2,6 @@ const express= require('express')
 const router = express.Router()
 const Alien = require('../model/alien')
 const e = require('express')
-// const alien = require('../model/alien')
 
 router.get('/', async(request, response) => {
     try{
