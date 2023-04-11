@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "f1de4c62-10d5-4dd8-9516-a0823c33738a",
+		"name": "node-js",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18625497"
+	},
+	"item": [
+		{
+			"name": "Post Alien",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Rajat5\",\n    \"tech\": \"java\",\n    \"sub\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/aliens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"aliens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Alien",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Rajat5\",\n    \"tech\": \"java\",\n    \"sub\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/aliens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"aliens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch Alien",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sub\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/aliens/64357da2c10542bc69121e6d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"aliens",
+						"64357da2c10542bc69121e6d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Aliens",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/aliens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"aliens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/aliens/64357da2c10542bc69121e6d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"aliens",
+						"64357da2c10542bc69121e6d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Alien",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/aliens/64357da2c10542bc69121e6d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"aliens",
+						"64357da2c10542bc69121e6d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
