@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const url = 'mongodb://localhost/alien'
+const port = 9000;
 
 const app= express()
 
@@ -17,6 +18,6 @@ const alienRouter = require('./routes/aliens')
 
 app.use('/aliens',alienRouter)
 
-app.listen(9000, function(){
-    console.log("Server started")
+module.exports = app.listen(port, ()=>{
+    console.log('**** App is running at http://localhost:' +port)
 })
