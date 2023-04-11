@@ -1,0 +1,27 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maninder416/node-js.git"
+  },
+  "author": "Maninder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maninder416/node-js/issues"
+  },
+  "homepage": "https://github.com/Maninder416/node-js#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.2.0",
+    "mongoose": "^7.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
