@@ -1,7 +1,12 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const url = 'mongodb://localhost/alien'
-const port = 9000;
+var port = process.env.port || (process.argv[2] || 9000);
+
+port = (typeof port === "number") ? port : 9000;
+
+
+// const port = 9000;
 
 const app= express()
 
@@ -18,6 +23,14 @@ const alienRouter = require('./routes/aliens')
 
 app.use('/aliens',alienRouter)
 
-module.exports = app.listen(port, ()=>{
-    console.log('**** App is running at http://localhost:' +port)
-})
+
+if(require.main === module){
+app.listen(port);
+}
+
+module.exports = app;
+console.log('**** App is running at http://localhost:' +port)
+// module.exports = app.listen(port, ()=>{
+//     console.log('**** App is running at http://localhost:' +port)
+// })
+// }

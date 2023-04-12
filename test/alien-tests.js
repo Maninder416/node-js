@@ -2,10 +2,12 @@ var chai = require('chai')
 var assert = chai.assert;
 var should = chai.should();
 var expect = chai.expect;
-const supertest = require('supertest');
-var server = require('../app')
 
-let chaiHttp = require('chai-http')
+var server = require('../app')
+const supertest = require('supertest');
+
+let chaiHttp = require('chai-http');
+const app = require('../app');
 chai.use(chaiHttp)
 
 describe('Task API', function(){
@@ -14,9 +16,12 @@ describe('Task API', function(){
         chai.request(server)
         .get('/aliens')
         .end((err, response)=>{
-            expect(response.status).to.be.equal(201111);
+            expect(response.status).to.be.equal(200);
+            expect(response.body.forEach(element => {
+                expect(element).to.have.all.keys('_id','name','tech','sub','__v');
+                
+            }));
             done();
         })
     })
 })
-
