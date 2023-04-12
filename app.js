@@ -5,9 +5,6 @@ var port = process.env.port || (process.argv[2] || 9000);
 
 port = (typeof port === "number") ? port : 9000;
 
-
-// const port = 9000;
-
 const app= express()
 
 mongoose.connect(url,{useNewUrlParser:true})
@@ -30,7 +27,3 @@ app.listen(port);
 
 module.exports = app;
 console.log('**** App is running at http://localhost:' +port)
-// module.exports = app.listen(port, ()=>{
-//     console.log('**** App is running at http://localhost:' +port)
-// })
-// }
