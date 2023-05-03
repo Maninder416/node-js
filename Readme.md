@@ -231,7 +231,7 @@ and when we call this endpoints, return this file:
     }
 ]
 
-**index.js:**
+`index.js:`
 
 const http = require("http")
 const fs = require("fs");
