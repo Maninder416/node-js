@@ -1,6 +1,15 @@
 const http = require("http");
 const server = http.createServer((request, response)=>{
-    response.end("Hello team: ");
+    if(request.url == "/"){
+        response.end("Hello team: ");
+    }
+    else if (request.url == "/about"){
+        response.end("About page ");
+
+    }else{
+        response.writeHead(404, {"content-type": "text/html"});
+        response.end("<h1> 404 Error page </h1>");
+    }
 
 });
 
