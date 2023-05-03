@@ -160,9 +160,9 @@ it will give response:
 
 ```
 **URL**
+*if you want to add URL of pages like when page URL is this then display this
+or when it does not exist then give us error:*
 ```shell
-if you want to add URL of pages like when page URL is this then display this
-or when it does not exist then give us error:
 
 const http = require("http");
 const server = http.createServer((request, response)=>{
