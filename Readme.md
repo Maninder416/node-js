@@ -258,7 +258,7 @@ http.createServer(function (req,res){
 ```
 **Output:**
 
-![Alt Text](images/img_12.png)
+![Alt Text](images/img_13.png)
 
 
 
