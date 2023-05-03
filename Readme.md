@@ -211,7 +211,7 @@ it should display the list:
 for this we need to save the data that we want to return.
 and when we call this endpoints, return this file:
 
-**data.json:**
+`data.json:`
 
 [
     {
