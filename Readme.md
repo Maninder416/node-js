@@ -314,5 +314,14 @@ event.emit("name",200, "OK");
 
 ![Alt Text](images/img_14.png)
 
+**Streams in Node:**
+
+![Alt Text](images/img_14.png)
+
+```shell
+
+
+```
+
 
 
