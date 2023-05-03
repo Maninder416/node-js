@@ -267,8 +267,10 @@ you want to send an email too and also show message on UI that message is regist
 means you are sending 2 events:
 1. Register user successfully.
 2. Email send.
-===========================================
 
+```
+**Code:**
+```shell
 const EventEmitter = require("events");
 const event = new EventEmitter();
 
@@ -281,7 +283,6 @@ event.on("name", ()=>{
 })
 
 event.emit("name");
-
 ```
 
 
