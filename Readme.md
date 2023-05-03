@@ -256,7 +256,9 @@ http.createServer(function (req,res){
     }
 }).listen(8000);
 ```
+**Output:**
 
+![Alt Text](images/img_12.png)
 
 
 
