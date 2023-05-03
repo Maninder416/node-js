@@ -288,7 +288,6 @@ event.emit("name");
 
 **You can also pass parameters in emit method.**
 
-```
 **Example:**
 
 ```shell
