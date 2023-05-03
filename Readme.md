@@ -316,7 +316,7 @@ event.emit("name",200, "OK");
 
 **Streams in Node:**
 
-![Alt Text](images/img_14.png)
+![Alt Text](images/img_15.png)
 
 ```shell
 
