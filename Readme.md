@@ -308,8 +308,11 @@ event.on("name", (sc, msg)=>{
 })
 
 event.emit("name",200, "OK");
-```
 
+```
+**Output:**
+
+![Alt Text](images/img_14.png)
 
 
 
