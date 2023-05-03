@@ -230,8 +230,9 @@ and when we call this endpoints, return this file:
         "price": 12.25
     }
 ]
+```
 
-`index.js:`
+**index.js:**
 
 const http = require("http")
 const fs = require("fs");
@@ -253,4 +254,4 @@ http.createServer(function (req,res){
 }).listen(8000);
 
 
-```
+
