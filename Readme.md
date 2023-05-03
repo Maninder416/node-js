@@ -320,6 +320,14 @@ event.emit("name",200, "OK");
 
 ```shell
 
+If both fs and stream are used to read and display data from a file, then there are some differences to consider when executing the server again and again.
+
+When using fs to read a file, the entire file is loaded into memory and stored as a string or buffer. If the file is large, this can result in high memory usage, which can cause performance issues. Additionally, if the file is modified after the server has started, fs will read the original version of the file and not the updated version until the server is restarted.
+
+On the other hand, when using stream to read a file, the data is read incrementally and processed piece by piece, rather than being loaded into memory all at once. This can result in lower memory usage and better performance, especially for large files. Additionally, if the file is modified after the server has started, stream will automatically read the updated version of the file without the need to restart the server.
+
+In summary, the main difference between using fs and stream to read and display data from a file is in how the data is processed and the impact on memory usage and performance, especially when the file is large or frequently modified.
+
 
 ```
 
