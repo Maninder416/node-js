@@ -285,8 +285,8 @@ event.on("name", ()=>{
 event.emit("name");
 ```
 
-```
-You can also pass parameters in emit method.
+
+**You can also pass parameters in emit method.**
 
 ```
 **Example:**
