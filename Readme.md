@@ -152,6 +152,12 @@ server.listen(8000, "localhost", ()=>{
     console.log("Listening to the port 8000")
 });
 
+when you hit:
+http://localhost:8000/
+
+it will give response:
+"hello team"
+
 
 
 ```
