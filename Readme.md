@@ -79,3 +79,65 @@ Synchronous example:
 
 ```
 ![Alt Text](images/img_6.png)
+
+![Alt Text](images/img_7.png)
+
+```shell
+You can use “OS” module to check the operating system and free memory and many more:
+```
+![Alt Text](images/img_8.png)
+
+```shell
+Calling from another file:
+
+```
+![Alt Text](images/img_9.png)
+
+**NPM: node package manager**
+```shell
+Node provides the inbuilt packages that we can use:
+```
+![Alt Text](images/img_10.png)
+
+```shell
+You have 2 options one is providing the house, and another is providing the wood
+along with axe, so which one you would prefer. 99% people do prefer inbuilt house,
+so node package manager is same as that. It provides you the inbuilt packages
+which you can use. 
+
+Configure npm:
+
+1.	Run npm init
+2.	Will generate package.json.
+
+Package is like dependency in pom. There is one package called chalk which we
+can use for more attractive UI. It provides more colorful content like iterm.
+
+Download it: npm i chalk
+
+Once you downloaded, it will automatically added to your package.json file:
+
+```
+![Alt Text](images/img_11.png)
+
+```shell
+Somehow require module to import is not working.
+So, use import statement to get it. For this, we need to add module in 
+package.json file:
+
+```
+![Alt Text](images/img_12.png)
+
+**Nodemon**
+```shell
+As of now, when we do some changes in our js file then we need to restart the node
+like:
+Node test.js 
+
+But if I say I do changes and I don’t want to run it again and again so to get
+this, we can use “nodemon”:
+
+Just give “nodemon index.js”
+
+```
+
