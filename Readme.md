@@ -7,3 +7,4 @@
 3.	I/O bound:  input/output is non-blocking. Means if one thread is taking time.
 
 ```
+![Alt Text](images/img.png)
