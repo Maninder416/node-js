@@ -257,5 +257,34 @@ http.createServer(function (req,res){
 
 ![Alt Text](images/img_13.png)
 
+**Events module:**
+```shell
+1. How to send event in node.
+2. For this we need to import events module.
+3. The benefit of event module in node is that we can fire multiple events having
+same name. Suppose, you want to register a user on FB. Once user register,
+you want to send an email too and also show message on UI that message is registerd.
+means you are sending 2 events:
+1. Register user successfully.
+2. Email send.
+===========================================
+
+const EventEmitter = require("events");
+const event = new EventEmitter();
+
+event.on("name", ()=>{
+    console.log("My name is Maninder");
+})
+
+event.on("name", ()=>{
+    console.log("Second event");
+})
+
+event.emit("name");
+
+```
+
+
+
 
 
