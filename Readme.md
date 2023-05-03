@@ -158,6 +158,30 @@ http://localhost:8000/
 it will give response:
 "hello team"
 
+```
+**URL**
+```shell
+if you want to add URL of pages like when page URL is this then display this
+or when it does not exist then give us error:
 
+const http = require("http");
+const server = http.createServer((request, response)=>{
+    if(request.url == "/"){
+        response.end("Hello team: ");
+    }
+    else if (request.url == "/about"){
+        response.end("About page ");
+
+    }else{
+        response.writeHead(404, {"content-type": "text/html"});
+        response.end("<h1> 404 Error page </h1>");
+    }
+
+});
+
+server.listen(8000, "localhost", ()=>{
+    console.log("Listening to the port 8000")
+});
 
 ```
+
