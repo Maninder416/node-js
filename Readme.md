@@ -202,3 +202,55 @@ const stringData = JSON.parse(jsonData);
 console.log("The string data is: "+stringData.name)
 
 ```
+**How to create Custom API**
+```shell
+We want to display data when we hit our API.
+Suppose, I have list of books so when user hit "/books" endpoints,
+it should display the list:
+
+for this we need to save the data that we want to return.
+and when we call this endpoints, return this file:
+
+**data.json:**
+
+[
+    {
+        "id": 40,
+        "name": "code cleaner",
+        "price": 12.25
+    },
+    {
+        "id": 39,
+        "name": "code cleaner",
+        "price": 12.25
+    },
+    {
+        "id": 38,
+        "name": "book1",
+        "price": 12.25
+    }
+]
+
+**index.js:**
+
+const http = require("http")
+const fs = require("fs");
+const url = require("url");
+
+http.createServer(function (req,res){
+    if(req.url == "/books"){
+        fs.readFile(`${__dirname}/data.json`,"utf-8", (error, data) => {
+            if(error){
+                console.error(error);
+                return;
+            }
+            console.log(JSON.parse(data))
+            res.end(data);
+        })
+        
+
+    }
+}).listen(8000);
+
+
+```
