@@ -9,4 +9,9 @@ event.on("name", ()=>{
     console.log("Second event");
 })
 
-event.emit("name");
+event.on("name", (sc, msg)=>{
+    console.log("Third event");
+    console.log(`Status code is: ${sc} and the page is: ${msg} `)
+})
+
+event.emit("name",200, "OK");
