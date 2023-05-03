@@ -336,6 +336,35 @@ In summary, the main difference between using fs and stream to read and display 
 data is processed and the impact on memory usage and performance, especially when the file is large or frequently
 modified.
 
+```
+**Code Example:**
+
+```shell
+const fs = require("fs");
+const http = require("http");
+
+const server = http.createServer();
+
+
+server.on("request", (req, res) => {
+    const rstream = fs.createReadStream("input.txt");
+    rstream.on("data", (chunkdata) => {
+        res.write(chunkdata);
+    
+    });
+    rstream.on("end", ()=>{
+        res.end();
+
+    });
+    rstream.on("error", (error) => {
+        console.log(error);
+        res.end("file not found");
+    });
+
+
+})
+
+server.listen(8000, "localhost");
 
 ```
 
